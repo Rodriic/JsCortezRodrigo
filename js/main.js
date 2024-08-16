@@ -1,5 +1,5 @@
-// Declaración de variables y constantes
-const carrito = []; // Array para almacenar los productos en el carrito
+const carrito = []; 
+
 const preciosLegumbres = {
     lentejas: 1200,
     garbanzos: 900,
@@ -10,12 +10,12 @@ const preciosSemillas = {
     chia: 900
 };
 
-// Función para agregar productos al carrito
+
 function agregarAlCarrito(producto, precio) {
     let cantidad = prompt("¿Cuántas toneladas desea comprar?");
     cantidad = Number(cantidad);
 
-    // Verificación básica
+    
     if (cantidad <= 0 || cantidad === '') {
         alert("Cantidad no válida.");
     } else {
@@ -25,7 +25,6 @@ function agregarAlCarrito(producto, precio) {
     }
 }
 
-// Función para ver el contenido del carrito
 function verCarrito() {
     if (carrito.length === 0) {
         alert("El carrito está vacío.");
@@ -44,7 +43,7 @@ function verCarrito() {
     }
 }
 
-// Función para el menú de legumbres
+
 function menuLegumbres() {
     let opcionLegumbre = prompt("Seleccione una legumbre: \n 1-Lentejas (USD 1200/Tn) \n 2-Garbanzos (USD 900/Tn) \n 3-Porotos (USD 1500/Tn) \n 4-Volver al menú principal");
     opcionLegumbre = Number(opcionLegumbre);
@@ -67,7 +66,6 @@ function menuLegumbres() {
     }
 }
 
-// Función para el menú de semillas
 function menuSemillas() {
     let opcionSemilla = prompt("Seleccione una semilla: \n 1-Girasol (USD 700/Tn) \n 2-Chía (USD 900/Tn) \n 3-Volver al menú principal");
     opcionSemilla = Number(opcionSemilla);
@@ -87,7 +85,6 @@ function menuSemillas() {
     }
 }
 
-// Función para mostrar el menú principal
 function mostrarMenuPrincipal() {
     let menu;
     do {
@@ -113,6 +110,5 @@ function mostrarMenuPrincipal() {
         }
     } while(menu !== 4);
 }
-
 
 mostrarMenuPrincipal();
