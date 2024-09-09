@@ -3,9 +3,7 @@ const productos = [
         id: 1, 
         nombre: "Lenteja", 
         precio: 1200,
-        imagen: "https://cdn.pixabay.com/photo/2017/09/26/23/33/lentils-2790516_640.jpg"
-
-        
+                
     },
     {
         id: 2, 
