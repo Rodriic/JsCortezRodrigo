@@ -1,6 +1,8 @@
 let cartProducts = JSON.parse(localStorage.getItem("cartProducts")) || [];
 let cartContainer = document.getElementById("cart-section");
 let totalElement = document.getElementById("cart-total");
+let checkoutForm = document.getElementById("checkout-form");
+let mensajeGracias = document.getElementById("mensajeGracias");
 
 function renderCarrito(cartItems) {
     let total = 0;
@@ -8,8 +10,7 @@ function renderCarrito(cartItems) {
 
     cartItems.forEach((producto, index) => {
         const card = document.createElement("div");
-        card.className = "card mb-3";
-        card.style.maxWidth = "18rem";
+        card.className = "card";
         card.innerHTML = `
             <div class="card-body">
                 <h5 class="card-title">${producto.nombre}</h5>
@@ -63,13 +64,20 @@ document.getElementById("vaciarCarrito").addEventListener("click", () => {
 
 document.getElementById("finalizarCompra").addEventListener("click", () => {
     if (cartProducts.length > 0) {
-        alert("Compra finalizada. Gracias por su compra.");
-        cartProducts = [];
-        localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
-        renderCarrito(cartProducts);
+        checkoutForm.classList.remove("hidden");
     } else {
         alert("El carrito está vacío.");
     }
+});
+
+document.getElementById("form-datos").addEventListener("submit", function (e) {
+    e.preventDefault();
+    alert("Compra finalizada. ¡Gracias por su compra!");
+    cartProducts = [];
+    localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
+    renderCarrito(cartProducts);
+    checkoutForm.classList.add("hidden");
+    mensajeGracias.classList.remove("hidden");
 });
 
 renderCarrito(cartProducts);

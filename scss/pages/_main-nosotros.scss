@@ -1,0 +1,60 @@
+.nosotros-orden {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.team-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  margin: 20px;
+  padding: 20px;
+  background-color: $color-fondo;
+  border-radius: 5px;
+  @include box-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+  text-align: center;
+
+  img {
+    width: 200px;
+    height: 200px;
+    @include border-radius(50%);
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+}
+
+.equipotit {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.bienvenida {
+  padding: 10px;
+  text-align: center;
+  color: black;
+  background-color: rgb(246, 237, 225);
+  margin-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}

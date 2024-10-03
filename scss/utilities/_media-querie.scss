@@ -1,0 +1,17 @@
+@media only screen and (max-width: 768px) {
+    h1 {
+      margin-top: 20px;
+    }
+    h2 {
+      font-size: medium;
+      margin-top: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .containerA {
+      grid-template-columns: 1fr;}
+
+      .containerI {
+        grid-template-columns: 1fr;
+  }}

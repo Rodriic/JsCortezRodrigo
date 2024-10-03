@@ -1,0 +1,37 @@
+.containerI {
+  .productA {
+    img {
+      clip-path: polygon(
+        20% 0%,
+        80% 0%,
+        100% 20%,
+        100% 80%,
+        80% 100%,
+        20% 100%,
+        0% 80%,
+        0% 20%
+      );
+
+      &.translate {
+        transition: transform 3s ease-in-out 5ms;
+        &:hover {
+          transform: translate(30px, 40px);
+        }
+      }
+      &.translate-dos {
+        transition: transform 3s ease-in-out 5ms;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+      &.translate-tres {
+        transition: transform 3s ease-in-out 5ms;
+
+        &:hover {
+          transform: scale(1.2) rotate(15deg);
+        }
+      }
+    }
+  }
+}

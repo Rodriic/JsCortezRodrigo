@@ -1,0 +1,16 @@
+.socials {
+    display: flex;
+    margin-bottom: 15px;
+    a {
+        display: inline-block;
+        min-height: 40px;
+        width: 40px;
+        background-color: sandybrown;
+        margin: 0 15px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: white;
+        font-size: 20px;
+      }
+  }

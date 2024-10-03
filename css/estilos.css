@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.button-base, .phone-button, .email-button, .linkedin-button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.linkedin-button {
+  background-color: #0077B5;
+  color: #fff;
+}
+.linkedin-button:hover {
+  background-color: #005f91;
+}
+
+.email-button {
+  background-color: #ff6600;
+  color: #fff;
+}
+.email-button:hover {
+  background-color: #cc5200;
+}
+
+.phone-button {
+  background-color: #008CBA;
+  color: #fff;
+}
+.phone-button:hover {
+  background-color: #006c8a;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 15px;
+  right: 5px;
+}
+
+.gradientes {
+  background: #4D4E50;
+  background: linear-gradient(180deg, #cac531, #f3f9a7);
+}
+
+.containerI .productA img {
+  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+.containerI .productA img.translate {
+  transition: transform 3s ease-in-out 5ms;
+}
+.containerI .productA img.translate:hover {
+  transform: translate(30px, 40px);
+}
+.containerI .productA img.translate-dos {
+  transition: transform 3s ease-in-out 5ms;
+}
+.containerI .productA img.translate-dos:hover {
+  transform: scale(1.2);
+}
+.containerI .productA img.translate-tres {
+  transition: transform 3s ease-in-out 5ms;
+}
+.containerI .productA img.translate-tres:hover {
+  transform: scale(1.2) rotate(15deg);
+}
+
+.carousel-item {
+  height: 600px;
+}
+
+.d-block {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-caption {
+  top: 0;
+  bottom: auto;
+  font-style: italic;
+  -webkit-text-fill-color: black;
+}
+
+.containerA {
+  max-width: 1000px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.productA {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.productA img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.productA-info {
+  padding: 10px;
+  text-align: center;
+}
+.productA-info h2 {
+  margin-top: 0;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.127);
+}
+.productA-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.tituloagro {
+  background-image: url(../assets/img/campo-trigo.avif);
+  background-size: contain;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+.tituloagro h1 {
+  margin: 0;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.contact-info {
+  flex: 1;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+.contact-info h2 {
+  margin-top: 0;
+}
+.contact-info p {
+  margin: 10px 0;
+}
+
+.contact-form {
+  flex: 2;
+  padding: 20px;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+.contact {
+  margin: auto;
+  max-width: 800px;
+  width: 100%;
+  background-color: #fffbbc;
+  display: flex;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.titulo-contact {
+  background-image: url(../assets/img/Cilos.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: whitesmoke;
+  padding: 100px 0;
+  text-align: center;
+}
+.titulo-contact h1 {
+  margin: 0;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.video-titulo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 900px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.industryh6 {
+  color: black;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+}
+
+.containerI {
+  max-width: 1000px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.tituloindu {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.nosotros-orden {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.team-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  margin: 20px;
+  padding: 20px;
+  background-color: hsl(59, 93%, 78%);
+  border-radius: 5px;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.team-member img {
+  width: 200px;
+  height: 200px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.team-member h3 {
+  margin: 0;
+  font-size: 18px;
+}
+.team-member p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.equipotit {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.bienvenida {
+  padding: 10px;
+  text-align: center;
+  color: black;
+  background-color: rgb(246, 237, 225);
+  margin-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+
+.socials {
+  display: flex;
+  margin-bottom: 15px;
+}
+.socials a {
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: sandybrown;
+  margin: 0 15px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    margin-top: 20px;
+  }
+  h2 {
+    font-size: medium;
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .containerA {
+    grid-template-columns: 1fr;
+  }
+  .containerI {
+    grid-template-columns: 1fr;
+  }
+}
+
+

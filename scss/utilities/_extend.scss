@@ -1,0 +1,35 @@
+.button-base {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+
+.linkedin-button {
+    @extend .button-base;
+    background-color: #0077B5;
+    color: #fff;
+    &:hover {
+      background-color: #005f91;
+    }
+  }
+  
+  .email-button {
+    @extend .button-base;
+    background-color: #ff6600;
+    color: #fff;
+    &:hover {
+      background-color: #cc5200;
+    }
+  }
+  
+  .phone-button {
+    @extend .button-base;
+    background-color: #008CBA;
+    color: #fff;
+    &:hover {
+      background-color: #006c8a;
+    }
+  }
