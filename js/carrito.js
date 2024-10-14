@@ -51,9 +51,7 @@ function actualizarCantidad(e) {
         cartProducts[productIndex].quantity = newQuantity;
         localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
         renderCarrito(cartProducts);
-    } else {
-        alert("Cantidad no válida. Debe ser mayor a 0.");
-    }
+    } 
 }
 
 document.getElementById("vaciarCarrito").addEventListener("click", () => {
@@ -65,14 +63,11 @@ document.getElementById("vaciarCarrito").addEventListener("click", () => {
 document.getElementById("finalizarCompra").addEventListener("click", () => {
     if (cartProducts.length > 0) {
         checkoutForm.classList.remove("hidden");
-    } else {
-        alert("El carrito está vacío.");
-    }
+    } 
 });
 
 document.getElementById("form-datos").addEventListener("submit", function (e) {
     e.preventDefault();
-    alert("Compra finalizada. ¡Gracias por su compra!");
     cartProducts = [];
     localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
     renderCarrito(cartProducts);
