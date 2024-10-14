@@ -72,7 +72,14 @@ document.getElementById("form-datos").addEventListener("submit", function (e) {
     localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
     renderCarrito(cartProducts);
     checkoutForm.classList.add("hidden");
-    mensajeGracias.classList.remove("hidden");
+    
+    Swal.fire({
+        title: "Buena compra",
+        text: "Su pedido está siendo procesado. Recibirá una confirmación a la brevedad.",
+        icon: "success"
+      });
 });
+
+
 
 renderCarrito(cartProducts);
